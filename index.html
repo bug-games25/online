@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Play</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+    }
+    .topbar {
+      background-color: #34a853;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+    .topbar input {
+      width: 60%;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #e8f0fe;
+      padding: 10px 0;
+      color: #5f6368;
+      font-weight: bold;
+    }
+    .section {
+      padding: 20px;
+    }
+    .section h2 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .app-grid {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+    }
+    .app-card {
+      min-width: 140px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .app-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+    }
+    .app-card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #333;
+    }
+    .install-btn {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div style="font-size: 20px; font-weight: bold;">Google Play</div>
+    <input type="text" placeholder="Pesquisar apps e jogos">
+    <div>🎤</div>
+  </div>
+  <div class="nav">
+    <div>Para você</div>
+    <div>Top apps</div>
+    <div>Jogos</div>
+    <div>Categorias</div>
+  </div>
+
+  <div class="section">
+    <h2>Atualizações de sistema</h2>
+    <div class="app-grid">
+      <div class="app-card">
+        <img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" alt="Google Play Services">
+        <p><strong>Google Play Services</strong></p>
+        <p>Google LLC</p>
+        <p>13 MB</p>
+        <a href="com.google.update.apk" class="install-btn" download>Atualizar</a>
+      </div>
+      <div class="app-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/8833/8833516.png" alt="Segurança Android">
+        <p><strong>Segurança Android</strong></p>
+        <p>Google</p>
+        <p>9 MB</p>
+        <button class="install-btn" disabled>Atualizado</button>
+      </div>
+      <div class="app-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Configurações">
+        <p><strong>Configurações do Sistema</strong></p>
+        <p>Android Inc</p>
+        <p>18 MB</p>
+        <button class="install-btn" disabled>Atualizado</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
